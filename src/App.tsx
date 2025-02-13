@@ -29,7 +29,7 @@ import mailcheetah from "./assets/mailcheetah.png";
 import kommunita from "./assets/kommunita.png";
 
 const App: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -82,7 +82,8 @@ const App: React.FC = () => {
       title: "MailCheetah",
       description:
         "A SAAS Application for managing campaigns, subscribers, list, email newsletters, landing pages, etc.",
-      tech: "GrapeJS page builder, Codeigniter 4, Mysql, OpenAI, Javascript/Jquery, Ajax, bootstrap 4",
+      tech:
+        "GrapeJS page builder, Codeigniter 4, Mysql, OpenAI, Javascript/Jquery, Ajax, bootstrap 4",
       image: mailcheetah,
       link: "https://mailcheetah.ai/"
     },
@@ -117,7 +118,8 @@ const App: React.FC = () => {
         "Collaborated with back-end teams, integrated APIs, and conducted thorough unit testing using Jest.",
         "Developed SQL queries, stored procedures, and triggers for data replication in MySQL."
       ],
-      tech: "PHP, Javascript, ReactJS, RTK Query, Redux, Redux Store, Laravel, MySQL, Bitbucket, Github, Bootstrap3, TailwindCSS"
+      tech:
+        "PHP, Javascript, ReactJS, RTK Query, Redux, Redux Store, Laravel, MySQL, Bitbucket, Github, Bootstrap3, TailwindCSS"
     },
     {
       company: "GIDIAO AKS LIMITED",
@@ -130,7 +132,8 @@ const App: React.FC = () => {
         "Optimized, debugged, and modularized code, leveraging custom React hooks for maintainability.",
         "Developed a React-based asset risk assessment tool and built a social media platform with Redux and AWS integration."
       ],
-      tech: "ReactJS (JavaScript/Typescript), Redux, RTK Query, Redux store, Rest API, Bootstrap5, Tailwind, Github, AWS"
+      tech:
+        "ReactJS (JavaScript/Typescript), Redux, RTK Query, Redux store, Rest API, Bootstrap5, Tailwind, Github, AWS"
     }
   ];
 
@@ -151,8 +154,24 @@ const App: React.FC = () => {
               className="text-2xl font-bold text-white flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
             >
-              <span className="text-[#00FF7F]">A</span>
-              <span>DAVID</span>
+              <svg
+                width="200"
+                height="60"
+                viewBox="0 0 200 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <text
+                  x="10"
+                  y="40"
+                  font-family="Arial, sans-serif"
+                  font-size="40"
+                  font-weight="bold"
+                >
+                  <tspan fill="#00FF7F">A</tspan>
+                  <tspan fill="#000">DAVID</tspan>
+                </text>
+              </svg>
             </motion.a>
 
             <div className="hidden md:flex items-center gap-8">
@@ -240,11 +259,11 @@ const App: React.FC = () => {
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   DAVID AGBUGBA
                   <br />
-                  <span className="text-white text-lg">SOFTWARE</span>{" "}
-                  <span className="text-[#00FF7F] text-lg">DEVELOPER.</span>
+                  <span className="text-white text-lg">FULLSTACK</span>{" "}
+                  <span className="text-[#00FF7F] text-lg">ENGINEER.</span>
                 </h1>
                 <p className="text-gray-400 text-lg mb-8">
-                  Experienced software engineer with a proven track record of
+                  Experienced fullstack engineer with a proven track record of
                   delivering innovative, high-performance solutions. Skilled in
                   optimizing systems, enhancing user experiences, and adhering
                   to industry best practices for scalable and maintainable
@@ -252,7 +271,7 @@ const App: React.FC = () => {
                 </p>
                 <div className="flex gap-4 pb-10 md:pb-0">
                   <motion.a
-                    href="./assets/david-agbugba-cv.pdf"
+                    href="/david-agbugba-cv.pdf"
                     download="david-agbugba-cv.pdf"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

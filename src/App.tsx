@@ -27,6 +27,7 @@ import davidImage from "./assets/IMG_0264.jpg";
 import school from "./assets/school.png";
 import mailcheetah from "./assets/mailcheetah.png";
 import kommunita from "./assets/kommunita.png";
+import carbonible from "./assets/carbonible.png";
 
 const App: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -102,6 +103,13 @@ const App: React.FC = () => {
       tech: "ReactJS, Redux, RTK Query, Redux Store, Tailwind",
       image: school,
       link: "https://qampusplusapp.com/"
+    },
+    {
+      title: "Carbonible",
+      description: "Digital Platform For Trading Carbon credits",
+      tech: "ReactJS, Redux, RTK Query, Redux Store, Tailwind",
+      image: carbonible,
+      link: "https://ca-crew-frontend.vercel.app"
     }
   ];
 
@@ -122,8 +130,8 @@ const App: React.FC = () => {
         "PHP, Javascript, ReactJS, RTK Query, Redux, Redux Store, Laravel, MySQL, Bitbucket, Github, Bootstrap3, TailwindCSS"
     },
     {
-      company: "GIDIAO AKS LIMITED",
-      position: "Web Developer",
+      company: "Oaks Intelligence Limited",
+      position: "Frontend Developer",
       period: "09/2023 - 08/2024",
       description: [
         "Translated high-fidelity designs into pixel-perfect, functional user interfaces.",
@@ -148,31 +156,44 @@ const App: React.FC = () => {
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0B]/80 backdrop-blur-md">
         <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <motion.a
-              href="#"
-              className="text-2xl font-bold text-white flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-            >
-              <svg
-                width="200"
-                height="60"
-                viewBox="0 0 200 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <text
-                  x="10"
-                  y="40"
-                  font-family="Arial, sans-serif"
-                  font-size="40"
-                  font-weight="bold"
-                >
-                  <tspan fill="#00FF7F">A</tspan>
-                  <tspan fill="#000">DAVID</tspan>
-                </text>
-              </svg>
-            </motion.a>
+          <div className="flex items-center justify-center">
+            {/*<motion.a*/}
+            {/*  href="#"*/}
+            {/*  className="text-2xl font-bold text-white flex items-center gap-2"*/}
+            {/*  whileHover={{ scale: 1.05 }}*/}
+            {/*>*/}
+            {/*  <svg*/}
+            {/*      width="100"*/}
+            {/*      height="60"*/}
+            {/*      viewBox="0 0 100 60"*/}
+            {/*      fill="none"*/}
+            {/*      xmlns="http://www.w3.org/2000/svg"*/}
+            {/*  >*/}
+            {/*    <text*/}
+            {/*        x="10"*/}
+            {/*        y="45"*/}
+            {/*        font-family="Arial, sans-serif"*/}
+            {/*        font-size="40"*/}
+            {/*        font-weight="bold"*/}
+            {/*        fill="#00FF7F"*/}
+            {/*    >*/}
+            {/*      A*/}
+            {/*    </text>*/}
+
+            {/*    <text*/}
+            {/*        x="30"*/}
+            {/*        y="45"*/}
+            {/*        font-family="Arial, sans-serif"*/}
+            {/*        font-size="40"*/}
+            {/*        font-weight="bold"*/}
+            {/*        fill="#00FF7F"*/}
+            {/*        opacity="0.9"*/}
+            {/*    >*/}
+            {/*      D*/}
+            {/*    </text>*/}
+            {/*  </svg>*/}
+
+            {/*</motion.a>*/}
 
             <div className="hidden md:flex items-center gap-8">
               {menuItems.map((item) => (
@@ -259,11 +280,11 @@ const App: React.FC = () => {
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   DAVID AGBUGBA
                   <br />
-                  <span className="text-white text-lg">FULLSTACK</span>{" "}
+                  <span className="text-white text-lg">FRONTEND</span>{" "}
                   <span className="text-[#00FF7F] text-lg">ENGINEER.</span>
                 </h1>
                 <p className="text-gray-400 text-lg mb-8">
-                  Experienced fullstack engineer with a proven track record of
+                  Experienced frontend engineer with a proven track record of
                   delivering innovative, high-performance solutions. Skilled in
                   optimizing systems, enhancing user experiences, and adhering
                   to industry best practices for scalable and maintainable
@@ -524,53 +545,53 @@ const App: React.FC = () => {
                   </motion.a>
                 </div>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <form className="space-y-6">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div>
-                      <input
-                        type="text"
-                        placeholder="Your Name"
-                        className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"
-                      />
-                    </div>
-                    <div>
-                      <input
-                        type="email"
-                        placeholder="Your Email"
-                        className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Your Message"
-                      rows={6}
-                      className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"
-                    ></textarea>
-                  </div>
-                  <motion.button
-                    type="submit"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full bg-[#00FF7F] text-black font-medium py-3 rounded-lg"
-                  >
-                    Send Message
-                  </motion.button>
-                </form>
-              </motion.div>
+              {/*<motion.div*/}
+              {/*  initial={{ opacity: 0, x: 50 }}*/}
+              {/*  whileInView={{ opacity: 1, x: 0 }}*/}
+              {/*  transition={{ duration: 0.5 }}*/}
+              {/*  viewport={{ once: true }}*/}
+              {/*>*/}
+              {/*  <form className="space-y-6">*/}
+              {/*    <div className="grid grid-cols-2 gap-6">*/}
+              {/*      <div>*/}
+              {/*        <input*/}
+              {/*          type="text"*/}
+              {/*          placeholder="Your Name"*/}
+              {/*          className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"*/}
+              {/*        />*/}
+              {/*      </div>*/}
+              {/*      <div>*/}
+              {/*        <input*/}
+              {/*          type="email"*/}
+              {/*          placeholder="Your Email"*/}
+              {/*          className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"*/}
+              {/*        />*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*    <div>*/}
+              {/*      <input*/}
+              {/*        type="text"*/}
+              {/*        placeholder="Subject"*/}
+              {/*        className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <div>*/}
+              {/*      <textarea*/}
+              {/*        placeholder="Your Message"*/}
+              {/*        rows={6}*/}
+              {/*        className="w-full px-4 py-3 bg-[#1A1A1A] border border-gray-800 rounded-lg focus:outline-none focus:border-[#00FF7F]"*/}
+              {/*      ></textarea>*/}
+              {/*    </div>*/}
+              {/*    <motion.button*/}
+              {/*      type="submit"*/}
+              {/*      whileHover={{ scale: 1.05 }}*/}
+              {/*      whileTap={{ scale: 0.95 }}*/}
+              {/*      className="w-full bg-[#00FF7F] text-black font-medium py-3 rounded-lg"*/}
+              {/*    >*/}
+              {/*      Send Message*/}
+              {/*    </motion.button>*/}
+              {/*  </form>*/}
+              {/*</motion.div>*/}
             </div>
           </div>
         </section>

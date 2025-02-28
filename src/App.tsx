@@ -44,8 +44,8 @@ const App: React.FC = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: "Projects", href: "#projects" }
+    // { name: "Contact", href: "#contact" }
   ];
 
   // Skills data
@@ -207,13 +207,14 @@ const App: React.FC = () => {
                   {item.name}
                 </motion.a>
               ))}
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                href="#contact"
                 className="bg-[#00FF7F] text-black px-6 py-2 rounded-full font-medium"
               >
                 Let's Talk
-              </motion.button>
+              </motion.a>
             </div>
 
             <button
